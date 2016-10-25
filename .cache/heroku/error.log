@@ -1,0 +1,6 @@
+2016/10/03 06:33:53 heroku-cli/5.4.2-a9a5017 (linux-amd64) go1.7.1 /home/nitrous/.local/share/heroku/cli/bin/heroku cmd: version
+2016/10/03 06:33:53 triggering background update
+2016/10/03 06:33:53 heroku-cli/5.4.2-a9a5017 (linux-amd64) go1.7.1 /home/nitrous/.local/share/heroku/cli/bin/heroku cmd: update
+2016/10/03 06:33:53 heroku-cli/5.4.2-a9a5017 (linux-amd64) go1.7.1 /home/nitrous/.local/share/heroku/cli/bin/heroku cmd: commands
+2016/10/03 06:33:53 heroku-cli/5.4.2-a9a5017 (linux-amd64) go1.7.1 /home/nitrous/.local/share/heroku/cli/bin/heroku cmd: version
+2016/10/03 06:33:53 heroku-cli/5.4.2-a9a5017 (linux-amd64) go1.7.1 /home/nitrous/.local/share/heroku/cli/bin/heroku cmd: plugins

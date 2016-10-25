@@ -1,0 +1,29 @@
+{
+  "name": "jwtaad",
+  "version": "1.0.0",
+  "description": "JWT AAD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Le",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "material-ui": "^0.16.1",
+    "path": "^0.12.7",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-highlighter": "^0.3.3",
+    "react-mini-router": "^2.0.0",
+    "react-tap-event-plugin": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "webpack": "^1.13.2"
+  }
+}

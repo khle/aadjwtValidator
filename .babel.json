@@ -1,0 +1,71 @@
+{
+  "{\"filename\":\"/home/nitrous/webpack.config.babel.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/home/nitrous\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.17.0": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/home/nitrous/webpack.config.babel.js",
+      "filenameRelative": "/home/nitrous/webpack.config.babel.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "webpack.config.babel.js",
+      "sourceFileName": "webpack.config.babel.js",
+      "sourceRoot": "/home/nitrous",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/home/nitrous",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "webpack.config.babel"
+    },
+    "ignored": false,
+    "code": "module.exports = {\n  entry: './client/main.js',\n  output: {\n    filename: 'bundle.js'\n  },\n  devtool: 'source-map',\n  module: {\n    loaders: [{\n      test: /\\.js$/,\n      exclude: /node_modules/,\n      loaders: ['babel-preset-stage-0', 'babel-preset-react']\n    }]\n  }\n};\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2suY29uZmlnLmJhYmVsLmpzIl0sIm5hbWVzIjpbIm1vZHVsZSIsImV4cG9ydHMiLCJlbnRyeSIsIm91dHB1dCIsImZpbGVuYW1lIiwiZGV2dG9vbCIsImxvYWRlcnMiLCJ0ZXN0IiwiZXhjbHVkZSJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLE9BQVAsR0FBaUI7QUFDZkMsU0FBTyxrQkFEUTtBQUVmQyxVQUFRO0FBQ05DLGNBQVU7QUFESixHQUZPO0FBS2ZDLFdBQVMsWUFMTTtBQU1mTCxVQUFRO0FBQ05NLGFBQVMsQ0FDUDtBQUNFQyxZQUFNLE9BRFI7QUFFRUMsZUFBUyxjQUZYO0FBR0VGLGVBQVMsQ0FBQyxzQkFBRCxFQUF5QixvQkFBekI7QUFIWCxLQURPO0FBREg7QUFOTyxDQUFqQiIsImZpbGUiOiJ3ZWJwYWNrLmNvbmZpZy5iYWJlbC5qcyIsInNvdXJjZVJvb3QiOiIvaG9tZS9uaXRyb3VzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSB7XG4gIGVudHJ5OiAnLi9jbGllbnQvbWFpbi5qcycsXG4gIG91dHB1dDoge1xuICAgIGZpbGVuYW1lOiAnYnVuZGxlLmpzJ1xuICB9LFxuICBkZXZ0b29sOiAnc291cmNlLW1hcCcsXG4gIG1vZHVsZToge1xuICAgIGxvYWRlcnM6IFtcbiAgICAgIHtcbiAgICAgICAgdGVzdDogL1xcLmpzJC8sXG4gICAgICAgIGV4Y2x1ZGU6IC9ub2RlX21vZHVsZXMvLFxuICAgICAgICBsb2FkZXJzOiBbJ2JhYmVsLXByZXNldC1zdGFnZS0wJywgJ2JhYmVsLXByZXNldC1yZWFjdCddXG4gICAgICB9XG4gICAgXVxuICB9XG59OyJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "webpack.config.babel.js"
+      ],
+      "names": [
+        "module",
+        "exports",
+        "entry",
+        "output",
+        "filename",
+        "devtool",
+        "loaders",
+        "test",
+        "exclude"
+      ],
+      "mappings": "AAAAA,OAAOC,OAAP,GAAiB;AACfC,SAAO,kBADQ;AAEfC,UAAQ;AACNC,cAAU;AADJ,GAFO;AAKfC,WAAS,YALM;AAMfL,UAAQ;AACNM,aAAS,CACP;AACEC,YAAM,OADR;AAEEC,eAAS,cAFX;AAGEF,eAAS,CAAC,sBAAD,EAAyB,oBAAzB;AAHX,KADO;AADH;AANO,CAAjB",
+      "file": "webpack.config.babel.js",
+      "sourceRoot": "/home/nitrous",
+      "sourcesContent": [
+        "module.exports = {\n  entry: './client/main.js',\n  output: {\n    filename: 'bundle.js'\n  },\n  devtool: 'source-map',\n  module: {\n    loaders: [\n      {\n        test: /\\.js$/,\n        exclude: /node_modules/,\n        loaders: ['babel-preset-stage-0', 'babel-preset-react']\n      }\n    ]\n  }\n};"
+      ]
+    },
+    "mtime": 1477239491445
+  }
+}
