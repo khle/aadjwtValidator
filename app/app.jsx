@@ -23,7 +23,7 @@ const App = React.createClass({
     },
 
     verify: function(jwt) {
-        return <div>{jwt}</div>;
+        return <Result jwt={jwt}></Result>;
     },
 
     notFound: function(path) {

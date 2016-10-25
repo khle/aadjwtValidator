@@ -14,6 +14,7 @@
     "material-ui": "^0.16.1",
     "path": "^0.12.7",
     "react": "^15.3.2",
+    "react-contenteditable": "^2.0.1",
     "react-dom": "^15.3.2",
     "react-highlighter": "^0.3.3",
     "react-mini-router": "^2.0.0",
