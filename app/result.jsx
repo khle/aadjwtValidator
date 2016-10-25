@@ -40,7 +40,3 @@ const Result = React.createClass({
 });
 
 export default Result;
-
-/*
-<ContentEditable html={this.props.jwt} disabled={true} />
-*/
