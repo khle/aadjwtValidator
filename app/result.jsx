@@ -3,12 +3,30 @@ import ReactDOM from 'react-dom';
 import AppBar from './appbar.jsx';
 import Input from './input.jsx';
 import ContentEditable from 'react-contenteditable';
+import 'whatwg-fetch';
 
 const Navigate = require('react-mini-router').navigate;
 
 const Result = React.createClass({
   onHome() {
     Navigate('/')
+  },
+  componentDidMount() {
+    var jwt = this.props.jwt;
+    fetch('/validate/', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        jwt: jwt,
+      })
+    })
+    .then((data) => {
+      console.log(data);
+      //this.setState({dairyList: data});
+    });
   },
   render() {
     const segments = this.props.jwt.split('.');

@@ -1,12 +1,16 @@
 var jsonwebtoken = require('jsonwebtoken');
 
-module.exports.getTenantId = function(jwtString) {
-    var decodedToken = jsonwebtoken.decode(jwtString);
+function getTenantId(jwtString) {
+  var decodedToken = jsonwebtoken.decode(jwtString);
     if(decodedToken) {
         return decodedToken.tid;
     } else {
         return null;
     }
+}
+
+module.exports.getTenantId = function(jwtString) {
+    return getTenantId(jwtString);
 }
 
 module.exports.convertCertificateToBeOpenSSLCompatible = function(cert) {
