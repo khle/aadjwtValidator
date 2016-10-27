@@ -23145,10 +23145,6 @@
 
 	exports.default = Result;
 
-	/*
-	<ContentEditable html={this.props.jwt} disabled={true} />
-	*/
-
 /***/ },
 /* 191 */
 /***/ function(module, exports, __webpack_require__) {
