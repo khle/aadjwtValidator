@@ -5,14 +5,35 @@ var path = require('path'),
 
 var app = express();
 
+function foo(jwt, cb) {
+  var result = [];
+  var observable = jwtValidator.validate(jwt);
+  observable.subscribe(
+    response => {
+      //console.log(response);
+      result.push(response);
+    }, 
+    error => {
+      console.error(error);
+    }, 
+    () => {
+      //console.log('done');
+      console.log(result);
+      console.log('Jyst a test');        
+      cb(result);
+    }); 
+}
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
-        extended: false
+        extended: true
     }));
 app.use('/', express.static(path.join(__dirname, 'app')));
 app.use('/validate/', function (req, res) {
-    jwtValidator.validate(req.body.jwt);
-    res.status(200).json({data: "ok"});
+  var result = foo(req.body.jwt, function(result) {
+    console.log(result);
+    res.send(result); 
+  });
 });
 
 var server = app.listen(8080, function () {
