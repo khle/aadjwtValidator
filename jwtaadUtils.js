@@ -59,7 +59,7 @@ module.exports.verify = function(jwt, certificate) {
     }
 
     return {
-        decoded: jsonwebtoken.decode(jwt),
+        decoded: jsonwebtoken.decode(jwt, {complete: true}),
         valid: isValid
     };
 }

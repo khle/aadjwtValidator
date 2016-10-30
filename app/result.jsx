@@ -17,7 +17,6 @@ const Result = React.createClass({
         jwt: jwt,
     })
     .then(response => {
-      $('ul.tabs').tabs();
       this.setState({data: response.data});
       console.log(this.state.data);
     })
@@ -32,13 +31,18 @@ const Result = React.createClass({
         <AppBar />
         <div className="row">                  
           <div className="col s6" >
-            <p>
-              <span style={{color: '#C2185B',}}>{segments[0]}</span>
-              <span style={{color: 'black',}}>.</span>
-              <span style={{color: '#689F38',}}>{segments[1]}</span>
-              <span style={{color: 'black',}}>.</span>
-              <span style={{color: '#1976D2',}}>{segments[2]}</span>
-            </p>  
+            <div className="card">
+              <div className="card-content">
+                <span className="card-title">Encoded</span>
+                <p>
+                    <span style={{color: '#C2185B',}}>{segments[0]}</span>
+                    <span style={{color: 'black',}}>.</span>
+                    <span style={{color: '#689F38',}}>{segments[1]}</span>
+                    <span style={{color: 'black',}}>.</span>
+                    <span style={{color: '#1976D2',}}>{segments[2]}</span>
+                </p> 
+              </div>
+            </div>
           </div>
           <div className="col s6" >
             <div className="card">

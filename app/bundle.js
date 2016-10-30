@@ -23081,7 +23081,6 @@
 	    _axios2.default.post('/validate/', {
 	      jwt: jwt
 	    }).then(function (response) {
-	      $('ul.tabs').tabs();
 	      _this.setState({ data: response.data });
 	      console.log(_this.state.data);
 	    }).catch(function (error) {
@@ -23101,32 +23100,45 @@
 	          'div',
 	          { className: 'col s6' },
 	          _react2.default.createElement(
-	            'p',
-	            null,
+	            'div',
+	            { className: 'card' },
 	            _react2.default.createElement(
-	              'span',
-	              { style: { color: '#C2185B' } },
-	              segments[0]
-	            ),
-	            _react2.default.createElement(
-	              'span',
-	              { style: { color: 'black' } },
-	              '.'
-	            ),
-	            _react2.default.createElement(
-	              'span',
-	              { style: { color: '#689F38' } },
-	              segments[1]
-	            ),
-	            _react2.default.createElement(
-	              'span',
-	              { style: { color: 'black' } },
-	              '.'
-	            ),
-	            _react2.default.createElement(
-	              'span',
-	              { style: { color: '#1976D2' } },
-	              segments[2]
+	              'div',
+	              { className: 'card-content' },
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'card-title' },
+	                'Encoded'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                _react2.default.createElement(
+	                  'span',
+	                  { style: { color: '#C2185B' } },
+	                  segments[0]
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  { style: { color: 'black' } },
+	                  '.'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  { style: { color: '#689F38' } },
+	                  segments[1]
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  { style: { color: 'black' } },
+	                  '.'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  { style: { color: '#1976D2' } },
+	                  segments[2]
+	                )
+	              )
 	            )
 	          )
 	        ),
