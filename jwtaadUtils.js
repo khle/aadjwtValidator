@@ -50,7 +50,7 @@ module.exports.verify = function(jwt, certificate) {
     // set the issuer we expect
     options.issuer = 'https://sts.windows.net/' + getTenantId(jwt) + '/';
 
-    let isValid = true;
+    var isValid = true;
     // verify the token
     try {
         jsonwebtoken.verify(jwt, certificate, options);

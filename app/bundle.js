@@ -21582,22 +21582,9 @@
 	                    'div',
 	                    { className: 'nav-wrapper teal' },
 	                    _react2.default.createElement(
-	                        'a',
-	                        { href: '#', className: 'brand-logo center' },
+	                        'span',
+	                        { className: 'brand-logo center' },
 	                        'Azure AD JWT Decode and Validate'
-	                    ),
-	                    _react2.default.createElement(
-	                        'ul',
-	                        { id: 'nav-mobile', className: 'left hide-on-med-and-down' },
-	                        _react2.default.createElement(
-	                            'li',
-	                            null,
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: '#' },
-	                                'Start'
-	                            )
-	                        )
 	                    )
 	                )
 	            )
