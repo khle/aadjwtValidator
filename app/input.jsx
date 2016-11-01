@@ -44,9 +44,3 @@ const Input = React.createClass({
 });
 
 export default Input;
-
-/*
-<ReactTextArea id="textarea1" className="materialize-textarea" rows={7} onChange={this.handleOnChange}>                    
-                    </ReactTextArea>
-
-*/

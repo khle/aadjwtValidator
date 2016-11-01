@@ -25,8 +25,7 @@ const Result = React.createClass({
       } else {
         const firstInvalid = _.find(response.data, o => o.valid === false);
         this.setState({data: firstInvalid});
-      }
-      console.log(this.state);
+      }      
     })
     .catch(error => {
       console.log(error);

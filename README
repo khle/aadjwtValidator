@@ -1,0 +1,3 @@
+Written in ReactJS and RxJS, this web application helps decoding and validating JWTs issued by Azure Active Directory.
+
+https://medium.com/@kevinle/use-flatmap-to-validate-jwts-issued-by-azure-active-diectory-828b2cea1b2a#.tpimho17h

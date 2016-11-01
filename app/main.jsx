@@ -6,10 +6,8 @@ import Input from './input.jsx';
 const Navigate = require('react-mini-router').navigate;
 
 const Main = React.createClass({
-  onVerify() {
-    console.log('onVerify ', this.state);
-    const jwt = this.state.jwt;
-    console.log('onVerify ', jwt);
+  onVerify() {    
+    const jwt = this.state.jwt;    
     Navigate(`/verify/${jwt}`)
   },
   onTextChanged(jwt) {

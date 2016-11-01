@@ -4,7 +4,6 @@ rx = require('rx'),
     jwtaadUtils = require('./jwtaadUtils');
 
 function get(url) {
-  console.log('url ==> ', url);
     return rx.Observable.create(observer => {
       axios.get(url, {
         params: {}
@@ -16,17 +15,7 @@ function get(url) {
       })
       .catch(function (error) {
         observer.onError(error);
-      });
-        /*
-        restler.get(url).on('complete', (result) => {
-            if (result instanceof Error) {
-                observer.onError(result);
-            } else {
-                observer.onNext(result);
-                observer.onCompleted();
-            }
-        });
-        */
+      });        
     });
 }
 
@@ -43,10 +32,7 @@ function requestOpenIdConfig(tenantId, jwt) {
         .map(compatCertificate => jwtaadUtils.verify(jwt, compatCertificate));
 };
 
-module.exports.validate = function(jwt) {
-  console.log(jwt);
+module.exports.validate = function(jwt) {  
   const tenant = jwtaadUtils.getTenantId(jwt);
-  console.log(tenant);
-
   return requestOpenIdConfig(tenant, jwt);
 }

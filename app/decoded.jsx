@@ -2,12 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const Decoded = React.createClass({
-    render() {
-        
-        console.log(this.props.data);
-        if (this.props.data) {
-            console.log(this.props.data.data);
-            
+    render() {                
+        if (this.props.data) {                        
             const spaces = ' ';
             const toString = s => {
                 return '"' + s + '"';
@@ -25,14 +21,7 @@ const Decoded = React.createClass({
             });
             const kvpPayload = _.map(this.props.data.data.decoded.payload, (value, key) => {
                 return <div key={key}>{spaces.replace(/ /g, '\u00a0\u00a0')}{toString(key)}: {possibleArrayToString(value)},</div>;
-            });
-            /*
-            const kvpHeader = JSON.stringify(this.props.data.data.decoded.header);
-            const formattedHeader = kvpHeader.replace(/,/g, ',\u2424');
-
-            const kvpPayload = JSON.stringify(this.props.data.data.decoded.payload);
-            const formattedPayload = kvpPayload.replace(/,/g, ',\u000a');
-            */
+            });            
             
             return  <div>
                         <div style={{color: '#C2185B',}}>
