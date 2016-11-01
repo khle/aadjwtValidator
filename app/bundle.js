@@ -21595,7 +21595,7 @@
 	                            _react2.default.createElement(
 	                                'a',
 	                                { href: '#' },
-	                                'About'
+	                                'Start'
 	                            )
 	                        )
 	                    )
