@@ -9,7 +9,7 @@ var AppBar = React.createClass({
                     <div className="nav-wrapper teal">
                       <a href="#" className="brand-logo center">Azure AD JWT Decode and Validate</a>
                       <ul id="nav-mobile" className="left hide-on-med-and-down">
-                        <li><a href="#">About</a></li>                            
+                        <li><a href="#">Start</a></li>                            
                       </ul>
                     </div>
                 </nav>
