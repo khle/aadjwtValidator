@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReactTextArea from './reactTextArea.jsx';
 
 const Input = React.createClass({
     getInitialState() {
