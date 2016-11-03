@@ -1,5 +1,4 @@
-rx = require('rx'),
-    restler = require('restler'),
+var rx = require('rx'),
     axios = require('axios'),
     jwtaadUtils = require('./jwtaadUtils');
 
